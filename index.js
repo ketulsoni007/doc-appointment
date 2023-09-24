@@ -15,9 +15,6 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname);
 const corsOption = {
     origin: true, // allow to server to accept request from different origin
 }
-app.get("/",(req,res)=>{
-    res.send("Api is in working conditions")
-})
 dotenv.config();
 connectDB();
 app.use(express.json());
